@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button {
     padding: 12px;
     font-size: 18px;
@@ -7,11 +9,11 @@
     white-space: nowrap; //quebrar ou nao a linha
 
     &--primary {
-        color: white;
-        background-color: #4f2ac3;
+        color: variables.$textColor;
+        background-color: variables.$purple;
     }
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
         display: block;
         width: 100%;
     }
